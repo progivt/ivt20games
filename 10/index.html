@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset=utf-8>
+<title>Игра</title>
+<script src="script.js"></script>
+<link rel="stylesheet" href="styles.css">
+<body>
+	<h1>;-;</h1>
+		<font id="find" size= "15" style="position: absolute;left:1160px;top:580px;z-index: 1;display: none">Найти:</font>
+	<div class="wrapper">
+		<font id="teext" size= "15" style="display: block">Выбери<br>персонажа</br></font>
+	</div>
+	<div class="end">
+		<font id="end" style="font-size: 40px;display: none">Поздравляем!<br>Вы собрали все вещи!</br></font>
+	</div>
+	<div class="find">
+		<font id="4khol" size= "15" style="display: none">чороон</br>хомус</br>оладьи</font>
+	</div>
+		<img id="bg" style="position: absolute;left:310px;top:86px: z-index: 2" height="724" width="1300" src="images/bg.png">
+		<img id="jk" style="position: absolute;left:375px;top:228px;z-index: 2" height="582" width="835" src="images/jk.png">
+		<img id="skaf" style="position: absolute;left:990px;top:100px;z-index: 0" height="670" width="900" src="images/шкаф.png">
+		<img id="polka" style="position: absolute;left:232px;top:14px" height="350" width="580" src="images/полка.png">	
+		<img id="opened" style="position: absolute;left:232px;top:14px" height="350" width="580" hidden src="images/opened.png">	
+		<img id="opened2" style="position: absolute;left:232px;top:14px; display: none" height="350" width="580" hidden src="images/opened2.png">	
+		<img id="opened3" style="position: absolute;left:232px;top:14px; display: none" height="350" width="580" hidden src="images/opened3.png">
+		<img id="openedskaf" style="position: absolute;left:990px;top:100px;z-index: 0" height="670" width="900" hidden src="images/openedskaf.png">
+		<img id="bed" style="position: absolute;left:-40px;top:300px" height="600" width="800" src="images/кровать.png">	
+		<img class="left" id="vlevo" style="position: absolute;left:480px;top:500px;z-index: 2" height="128" width="128" src="images/влево.png" onClick="prevImg()">
+		<img class="right" id="vpravo" style="position: absolute;left:955px;top:500px;z-index: 2" height="128" width="128" src="images/вправо.png" onClick="nextImg()">
+		<img class="dot" id="to4ka" style="position: absolute;left:599px;top:150px;z-index: 2;display: none" height="128" width="128" src="images/точка.png">
+		<img id="4ron" style="position: absolute;left:582px;top:162px;z-index: 2;display: none" height="128" width="160" src="images/чороон.png" onClick="minus4rn();">
+		<img id="khomus" style="position: absolute;left:1450px;top:462px;z-index: 2;display: none" height="18" width="60" src="images/khomus.png" onClick="minuskhms()">
+		<img id="olad" style="position: absolute;left:340px;top:233px;z-index: 2;display: none" height="40" width="80" src="images/olad.png" onClick="minusolad()">
+		<img class="selecto" id="select" style="position: absolute;left:850px;top:650px;z-index: 2" height="128" width="128" src="images/galo4ka.png" onClick="privet()">	
+		<img id="polkaleft" style="position: absolute;left:322px;top:90px;display: none" height="200" width="200" src="images/polkaleft.png" onClick="openpolka2()">	
+		<img id="polkaright" style="position: absolute;left:522px;top:90px;display: none" height="200" width="200" src="images/polkaright.png" onClick="openpolka()">	
+		<img id="skafclick" style="position: absolute;left:1302px;top:130px;display: none" height="360" width="240" src="images/skafclick.png" onClick="openSkaf()">	
+		<img id="ramka" style="position: absolute;left:1110px;top:550px" height="260" width="500" src="images/ramka.jpg">	
+		<a href=index.html><img class="restart" id="restart" style="position: absolute;left:1145px;top:575px;z-index: 2; display: none" height="70" width="70" src="images/restart.png"</a>
+</body>
+</html>

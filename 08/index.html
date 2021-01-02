@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+    <style>
+        body {
+            background: #00ffff;
+        }
+
+        .menu {
+            background-color: #ff0000;
+            height: 400px;
+            width: 700px;
+            display: block;
+            margin: auto;
+            text-align: center;
+            padding: 5px;
+        }
+
+        .caption {
+            padding: 5px;
+            background-color: #ffff00;
+            margin: -5px;
+        }
+
+        .play {
+            padding: 5px;
+            margin: 20px;
+            background-color: #ffff00;
+            border-radius: 20px;
+        }
+
+        .play:hover {
+            padding: 5px;
+            margin: 10px;
+            margin-top: 25px;
+            background-color: #00ff00;
+        }
+
+        .infinity {
+            padding: 5px;
+            margin: 20px;
+            background-color: #ffff00;
+            border-radius: 20px;
+        }
+
+        .infinity:hover {
+            padding: 5px;
+            margin: 10px;
+            margin-top: 25px;
+            background-color: #00ff00;
+        }
+
+        .about {
+            padding: 5px;
+            margin: 20px;
+            background-color: #ffff00;
+            border-radius: 20px;
+        }
+
+        .about:hover {
+            padding: 5px;
+            margin: 10px;
+            margin-top: 25px;
+            background-color: #00ff00;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <div class="caption">
+            <h1>ToothCleaner</h1>
+        </div>
+        <div class="play" onclick="document.location='1 lvl.html'">
+            <h2>Играть</h2>
+        </div>
+        <div class="infinity" onclick="document.location='infinity.html'">
+            <h2>Бесконечный режим</h2>
+        </div>
+        <div class="about" onclick="document.location='about.html'">
+            <h2>Об игре</h2>
+        </div>
+    </div>
+    <h1></h1>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+	body {font-family: "Segoe UI", "SF Pro Display", sans-serif; background-color:white;}
+	body {text-align:center;}
+	img.right, img.left, img.selecto {
+		transition: .25s;
+		cursor: pointer;
+		opacity: .5;
+	}
+	img.dot, img.dot2, img.close1, img.close2 {
+		transition: .25s;
+		cursor: pointer;
+		opacity: .3;
+	}	
+	img.restart {
+		transition: .25s;
+		cursor: pointer;
+		opacity: .6;
+	}
+	img.right:hover, img.left:hover, img.dot:hover, img.selecto:hover, img.restart:hover, img.dot2:hover, img.close1:hover, img.close2:hover {
+		opacity: 1;
+	}
+	.wrapper {
+		position: absolute;
+		z-index: 1;
+		padding: 1px;
+		margin-left: 1225px;
+		margin-right: 40px;
+		margin-top: 510px;
+		border-radius: 6px;
+	}
+	.end {
+		position: absolute;
+		z-index: 1;
+		padding: 1px;
+		margin-left: 1145px;
+		margin-right: 40px;
+		margin-top: 525px;
+		border-radius: 6px;
+	}
+	.find {
+		position: absolute;
+		z-index: 1;
+		padding: 1px;
+		margin-left: 1310px;
+		margin-right: 40px;
+		margin-top: 494px;
+		border-radius: 6px;
+	}

@@ -1,0 +1,6 @@
+[1219/192850.876:ERROR:process_reader_win.cc(151)] SuspendThread: Отказано в доступе. (0x5)
+[1219/192850.883:ERROR:exception_snapshot_win.cc(99)] thread ID 13216 not found in process
+[1219/192850.884:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: Попытка доступа к процессу, выполняющему процедуру завершения. (0xc000010a)
+[1219/193435.734:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
+[1226/135926.220:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
+[1226/165742.628:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
