@@ -87,12 +87,16 @@
 					navigator.clipboard.writeText(document.getElementById("rankingcode").value).then(function() {;
 					}, function(err) {
 						console.error('Async: Could not copy text: ', err);
-						result = false;
+						result = fallbackCopyTextToClipboard();
 					});
 					return result;
 				}
 				function tryCopy(){
-					if (document.querySelector('#rankingcode').value.trim() && copyTextToClipboard()) alert('Код скопирован, вставьте его в Гугл форму!')
+					let text = document.querySelector('#rankingcode');
+					if (text.value.trim()){
+						text.focus();
+						if (copyTextToClipboard()) alert('Код скопирован, вставьте его в Гугл форму!')
+					}
 				}
 			</script>
 			<div class="p2 bg-yellow border-top navy border-yellow">
