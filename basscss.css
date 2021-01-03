@@ -10,6 +10,10 @@ li > img { margin-right:.5rem; }
 
 .border-dashed { border-style: dashed!important; }
 
+.gametile { width:203px; height:203px; margin: 0;}
+
+.h205 {height:205px}
+
 .mid{
   vertical-align: middle;
   display: flex!important;
@@ -342,6 +346,8 @@ h6, .h6 { font-size: .75rem }
 .button-small {
   padding: .25rem .5rem;
 }
+
+.p0 { padding:  0 }
 
 .button-big {
   padding: 1rem 1.25rem;

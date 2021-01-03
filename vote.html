@@ -8,141 +8,112 @@
 </head>
 <body>
 	<div class="px2 sm-px3 py2 mb3 col-8 mx-auto">
-		<section class="mb3 mx-auto col col-12">
-			<div class="p3 clearfix bg-navy yellow">
-				<div class="col col-5">
-					<h2 class="h3 m0 white">Голосование за игры</h2>
-					<p class="mt2 yellow">
-					Расположите проекты перетаскиванием. Выше означает лучше. 
-					</p>
-					<p class="mt2 yellow">
-					Не беспокойтесь слишком сильно о&nbsp;точности расстановки,
-					разница в 1–2 места будет почти незаметна в баллах
-					</p>
-					<p class="mt2 yellow">
-					Игры можно посмотреть в действии <a href="https://progivt.github.io/docs/js06game/">тут.</a>
-					</p>
-					<p class="mt2 yellow">
-					Когда все будет готово, нажмите кнопку «Готово, получить код» и скопируйте 
-					появившийся внизу код в гугл-форму голосования.</a>
-					</p>
-					</div>
-				<div class="col col-7">
-					<ul class="ml4 js-sortable sortable list flex flex-column list-reset">
-						<li id="li01" class="flex flex-center p1 mb1 navy bg-yellow border border-yellow" style="position: relative; z-index: 10"><img width="64" height="64" src="01.png"> Flappy SVFU</li>
-						<li id="li02" class="flex flex-center p1 mb1 navy bg-yellow border border-yellow" style="position: relative; z-index: 10"><img width="64" height="64" src="02.png"> Змейка 1 (пиу/dorime)</li>
-						<li id="li03" class="flex flex-center p1 mb1 navy bg-yellow border border-yellow" style="position: relative; z-index: 10"><img width="64" height="64" src="03.png"> SpaceWars</li>
-						<li id="li04" class="flex flex-center p1 mb1 navy bg-yellow border border-yellow" style="position: relative; z-index: 10"><img width="64" height="64" src="04.png"> Змейка 2</li>
-						<li id="li05" class="flex flex-center p1 mb1 navy bg-yellow border border-yellow" style="position: relative; z-index: 10"><img width="64" height="64" src="05.png"> Змейка 3 (с яблоками)</li>
-						<li id="li06" class="flex flex-center p1 mb1 navy bg-yellow border border-yellow" style="position: relative; z-index: 10"><img width="64" height="64" src="06.png"> Эльф (платформер)</li>
-						<li id="li07" class="flex flex-center p1 mb1 navy bg-yellow border border-yellow" style="position: relative; z-index: 10"><img width="64" height="64" src="07.png"> Белый медвежонок</li>
-						<li id="li08" class="flex flex-center p1 mb1 navy bg-yellow border border-yellow" style="position: relative; z-index: 10"><img width="64" height="64" src="08.png"> Зубочистка</li>
-						<li id="li09" class="flex flex-center p1 mb1 navy bg-yellow border border-yellow" style="position: relative; z-index: 10"><img width="64" height="64" src="09.png"> Злая пуля и мечи</li>
-						<li id="li10" class="flex flex-center p1 mb1 navy bg-yellow border border-yellow" style="position: relative; z-index: 10"><img width="64" height="64" src="10.png"> Корейцы ищут хомус</li>
-						<li id="li11" class="flex flex-center p1 mb1 navy bg-yellow border border-yellow" style="position: relative; z-index: 10"><img width="64" height="64" src="11.png"> Зомби в КФЕНе</li>
-						<li id="li12" class="flex flex-center p1 mb1 navy bg-yellow border border-yellow" style="position: relative; z-index: 10"><img width="64" height="64" src="12.png"> Олонхо</li>
-						<li id="li13" class="flex flex-center p1 mb1 navy bg-yellow border border-yellow" style="position: relative; z-index: 10"><img width="64" height="64" src="13.png"> Новелла Второй шанс</li>
-						<li id="li14" class="flex flex-center p1 mb1 navy bg-yellow border border-yellow" style="position: relative; z-index: 10"><img width="64" height="64" src="14.png"> Первый день в кфене</li>
-					</ul>
-					<button class="ml4 js-serialize-button button navy bg-yellow">Готово, получить код!</button>
+		<section>
+			<div class="col col-12 bg-navy">
+				<div class="col col-12 p2">
+				<div class="clearfix flex">
+				<div class="left"><h2 class="h3 m0 white">Голосование за игры</h2></div>
+				<div class="right"><img class="right" src="logo.png" width="30" height="30"></div>
+				</div>
+				<p class="mt2 yellow">
+					К сожалению, Google Формы не приспособлены для расстановки 14 вариантов по порядку. Поэтому данная
+					страница состоит из двух частей: сортировщика проектов и гугл-формы. <br>
+					1) Расположите проекты перетаскиванием в порядке предпочтения слева направо и сверху вниз. <br>
+					2) Когда все будет готово, нажмите кнопку «Готово, получить код»<br>
+					3) Cкопируйте появившийся внизу код в гугл-форму голосования.<br>
+					4) Нажмите кнопку «Отправить».
+				</p>
+				<p class="mt2 yellow">				  
+				</p>
+				<p class="mt2 yellow">
+					Не беспокойтесь слишком сильно о&nbsp;точности расстановки, разница в 1–2 места будет почти незаметна в баллах.
+					Игры в действии можно посмотреть <a href="https://progivt.github.io/docs/js06game/">тут.</a>
+				</p>	
+			</div>
+				<div class="js-grid sortable grid clearfix">
+					<div id="li01" class="col col-3 p0 h205 border border-yellow"><img class="gametile" src="01.png"></div>
+					<div id="li02" class="col col-3 p0 h205 border border-yellow"><img class="gametile" src="02.png"></div>
+					<div id="li03" class="col col-3 p0 h205 border border-yellow"><img class="gametile" src="03.png"></div>
+					<div id="li04" class="col col-3 p0 h205 border border-yellow"><img class="gametile" src="04.png"></div>
+					<div id="li05" class="col col-3 p0 h205 border border-yellow"><img class="gametile" src="05.png"></div>
+					<div id="li06" class="col col-3 p0 h205 border border-yellow"><img class="gametile" src="06.png"></div>
+					<div id="li07" class="col col-3 p0 h205 border border-yellow"><img class="gametile" src="07.png"></div>
+					<div id="li08" class="col col-3 p0 h205 border border-yellow"><img class="gametile" src="08.png"></div>
+					<div id="li09" class="col col-3 p0 h205 border border-yellow"><img class="gametile" src="09.png"></div>
+					<div id="li10" class="col col-3 p0 h205 border border-yellow"><img class="gametile" src="10.png"></div>
+					<div id="li11" class="col col-3 p0 h205 border border-yellow"><img class="gametile" src="11.png"></div>
+					<div id="li12" class="col col-3 p0 h205 border border-yellow"><img class="gametile" src="12.png"></div>
+					<div id="li13" class="col col-3 p0 h205 border border-yellow"><img class="gametile" src="13.png"></div>
+					<div id="li14" class="col col-3 p0 h205 border border-yellow"><img class="gametile" src="14.png"></div>
+				</div>
+				<div class="col col-12 center p2">
+				<button class="js-serialize-button button navy bg-yellow">Готово, получить код!</button>
 				</div>
 			</div>
-			<script type="text/javascript">
-				sortable('.js-sortable', {
-					forcePlaceholderSize: true,
-					placeholderClass: 'mb1 bg-navy border border-yellow border-dashed',
-					hoverClass: 'bg-maroon yellow',
-					itemSerializer: function (item, container) {
-						item.parent = ''
-						item.id = item.node.id.slice(-2)
-						item.node = ''
-						return item
-					},
-	  				containerSerializer: function (container) {
-						return null;
-					}
-				})
-				document.querySelector('.js-serialize-button').addEventListener('click', function () {
-					let serialized = sortable('.js-sortable', 'serialize')
-					let code = serialized[0]['items'].map(item => item.id).join('-')  
-	  				document.querySelector('.serialized-content').innerHTML = code
-				})
-
-				function fallbackCopyTextToClipboard() {
-					var textArea = document.getElementById("rankingcode");
-					textArea.focus();
-					textArea.select();
-					try {
-						var successful = document.execCommand('copy');
-					} catch (err) {
-						return false;
-					}
-					return true;
-				}
-				function copyTextToClipboard() {
-					let result = true;
-					if (!navigator.clipboard) {
-						return fallbackCopyTextToClipboard();
-					}
-					navigator.clipboard.writeText(document.getElementById("rankingcode").value).then(function() {;
-					}, function(err) {
-						console.error('Async: Could not copy text: ', err);
-						result = fallbackCopyTextToClipboard();
-					});
-					return result;
-				}
-				function tryCopy(){
-					let text = document.querySelector('#rankingcode');
-					if (text.value.trim()){
-						text.focus();
-						if (copyTextToClipboard()) alert('Код скопирован, вставьте его в Гугл форму!')
-					}
-				}
-			</script>
+		</section>
+		<section class="mb3 mx-auto col col-12">
 			<div class="p2 bg-yellow border-top navy border-yellow">
 				<h5>Код:</h5>
 				<textarea id="rankingcode" cols="80" rows="1" class="serialized-content">
 				</textarea>
-				<img id="copyicon" style="width:2rem; height: 2rem;" src="copy.png" onclick="tryCopy();">
+				<img id="copyicon" style="width:2rem; height: 2rem;" src="copy.png" onclick="copyClick();">
 			</div>
+		</section>
+		<section class="col col-12">
+			<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScwfTesNiREPcFwN1eCI2KYnagpdU5hXem2d7P0II0S1RPpAQ/viewform?embedded=true" width="804" height="423" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
 		</section>
 	</div>
 	<script>
-		sortable('.js-sortable-copy', {
-			forcePlaceholderSize: true,
-			copy: true,
-			acceptFrom: false,
-			placeholderClass: 'mb1 bg-navy border border-yellow border-dashed',
-		});
-		sortable('.js-sortable-copy-target', {
-			forcePlaceholderSize: true,
-			acceptFrom: '.js-sortable-copy,.js-sortable-copy-target',
-			placeholderClass: 'mb1 border border-maroon',
-		});
 		sortable('.js-grid', {
 			forcePlaceholderSize: true,
-			placeholderClass: 'col col-4 border border-maroon'
+			placeholderClass: 'col col-4 border border-maroon',
+			hoverClass: 'bg-maroon yellow',
+			itemSerializer: function (item, container) {
+				item.parent = ''
+				item.id = item.node.id.slice(-2)
+				item.node = ''
+				return item
+			},
+			containerSerializer: function (container) {
+				return null;
+			}
 		});
-		sortable('.js-sortable-connected', {
-			forcePlaceholderSize: true,
-			connectWith: '.js-connected',
-			handle: '.js-handle',
-			items: 'li',
-			placeholderClass: 'border border-white bg-orange mb1'
+		document.querySelector('.js-serialize-button').addEventListener('click', function () {
+					let serialized = sortable('.js-grid', 'serialize')
+					let code = serialized[0]['items'].map(item => item.id).join('-')  
+	  				document.querySelector('.serialized-content').innerHTML = code
+	})
+
+	function fallbackCopyTextToClipboard() {
+		let textArea = document.getElementById("rankingcode");
+		textArea.focus();
+		textArea.select();
+		try {
+			document.execCommand('copy');
+		} catch (err) {
+			return false;
+		}
+		return true;
+	}
+	function copyTextToClipboard() {
+		let result = true;
+		if (!navigator.clipboard) {
+			return fallbackCopyTextToClipboard();
+		}
+		navigator.clipboard.writeText(document.getElementById("rankingcode").value).then(function() {;}, 
+		function(err) {
+			console.error('Async: Could not copy text: ', err);
+			result = fallbackCopyTextToClipboard();
 		});
-		sortable('.js-sortable-inner-connected', {
-			forcePlaceholderSize: true,
-			connectWith: 'js-inner-connected',
-			handle: '.js-inner-handle',
-			items: '.item',
-			maxItems: 3,
-			placeholderClass: 'border border-white bg-orange mb1'
-		});
-		sortable('.js-sortable-buttons', {
-			forcePlaceholderSize: true,
-			items: 'li',
-			placeholderClass: 'border border-white mb1',
-			hoverClass: 'bg-yellow'
-		});
+		return result;
+	}
+	function copyClick() {
+		let text = document.querySelector('#rankingcode');
+		if (text.value.trim()){
+			text.focus();
+			if (copyTextToClipboard()) alert('Код скопирован, вставьте его в Гугл форму!')
+		}
+	}
 	</script>
 </body>
+</html>
